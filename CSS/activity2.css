@@ -1,0 +1,57 @@
+body {
+    background-color: #181818;
+    color: white;
+    
+  }
+  .main {
+    display: flex;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  div {
+    font-size: 2.2rem;
+    margin-left: 141px;
+}
+  
+  button {
+    font-size: 1.2rem;
+    color: white;
+    background-color: #181818;
+    width: 174px;
+    height: 64px;
+    border-radius: 0.29999999999999716rem;
+    border: 2.6999999999999993px solid grey;
+  }
+  .t1 {
+    font-size: 9.5rem;
+    margin-left: 444px
+    ;
+  }
+  .t2{
+    font-size: 9.5rem;
+    margin-left: 650px;
+
+  }
+  .t3 {
+    font-size: 2rem;
+    margin-left: 650px;
+  }
+  .t4 {
+    font-size: 2rem;
+    margin-left: 844px;
+  }
+
+  .a{
+    display: flex;
+    margin-left: 755px;
+    
+  }
+  
+
+
+  
+    

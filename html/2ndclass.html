@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Class</title>
+    <style>
+        h2{color:chartreuse}
+    
+    body{   
+        background-color:aliceblue;}           
+    </style>   <!--This command changes background color
+    -->
+    <link rel="stylesheet" href="/CSS/first.css"/>   <!--lINKS HTML SHEETS TO A DIFFERENT BAKCGROUND CSS SHEET-->
+
+</head>
+
+
+
+<body>
+    <!--Unordered list-->
+    <ul>     <!--types of ul= disc/square/circle-->
+        <li>Carrot</li>
+        <li>Ginger</li>
+        <li>Raddish</li>
+    </ul>
+
+    <!--Ordered List-->
+    <ol>
+   <!--types are "1"-Default-Case Numerical/"I"-Upper-Case Numericals/"i"-Lower Case Numericals/"A"-Upper Case Letters/"a"-Lower Case Letters-->
+            <li>Carrot</li>
+            <li>Ginger</li>
+            <li>Raddish</li>
+    </ol>
+
+    <ol type ="A" start="4"> 
+            <li>Carrot</li>
+            <li>Ginger</li>
+            <li>Raddish</li>
+
+    </ol>
+
+    <!-- NESTED LISTS -->
+
+    <!--nesting of unordered list-->
+    <ul type = "square">
+        <li>
+            Vegetables
+            <ul type ="disc">
+                <li>Carrot</li>
+                <li>Tomato</li>
+            </ul>
+        </li>
+        <li type="square">
+            Fruits
+            <ul type ="disc">
+                <li>Mango</li>
+                <li>Apple</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Nesting of ordered list-->
+    <ol type = "A">
+        <ol>
+        <li>
+            Vegetables
+            <ol type ="1">
+                <li>Carrot</li>
+                <li>Tomato</li>
+            </ol>
+        </li>
+        <li>
+            Fruits
+            <ol type="1">
+                <li>Mango</li>
+                <li>Apple</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!--Description list-->
+    <dl> <!--dl stands for description list-->
+        <dt>Coffee</dt>  <!--dt means description term. It's contents are always visible in a greater highlight than the content in <dd>-->
+        <dd>It is a black hot drink</dd>  <!--Dd stands for description detail-->
+    </dl>
+
+    <!--for forms new file is created-->
+
+    <table>
+        <tr>  <!--<tr> stands for table row.1st row-->
+            <th>Vegetables</th>   <!--<th> stand for table heading.For each heading new <th> <tag-->
+            <th>Fruits</th>
+            <th>Chocolates</th>
+        </tr>
+        <tr>
+            <td>Ginger</td>     <!--<td> stands for table data..2nd Row-->
+            <td>Apple</td>
+            <td>Dairy Milk</td>
+        </tr>
+    </table>
+<br>
+<br>
+    <table border="3pix" bgcolor="BlanchedAlmond" width="50%">
+        <tr bgcolor="Yellow">  
+            <th>Vegetables</th>   
+            <th>Fruits</th>
+            <th>Chocolates</th>
+        </tr>
+        <tr bgcolor="Green">
+            <td>Ginger</td>          <!--Rowspan increase space of rows-->
+            <td>Apple</td>             <!--Colspan increse size of coloums-->
+            <td>Dairy Milk</td>
+        </tr>
+        <tr bgcolor="Green">
+            <td >Radish</td>     
+            <td>Mango</td>
+            <td>Center Fresh</td>
+        </tr>
+
+        
+    </table>
+    <!-- Inline style -->
+    <span style="color:aqua;font: size 10px;">Priyangshu Das</span>    <!--Style can change color/size/font-->
+    <h1 style="color:blueviolet; font-family:'Times New Roman', Times, serif; font: size 10px;;">Hello World</h1>
+
+    <!-- Embeded or internal style
+    <style>
+        h1{color:brown}
+    </style> 
+    All <h1> tags will get similar style through the html document. Written inside <head> tag -->
+
+    <h1>Priyangshu</h1>
+    <h2>Das</h2>
+    
+    <!--<REFERENCE>- helps to link a html sheet to css sheet for ease in making pages -->
+
+    <!-- INLINE STYLING WILL HAVE MORE PREFRENCE ANY STYLE SHEET -->
+
+    <!-- IN HEAD TAG STYLING WILL TAKE PLACE IN THE ORDER WHICH IT IS WRITTEN. IT OVERWRITIS STYLES WITH EVERY TAG -->
+    
+    <!-- SELECTORS-used to find or select the html tag which needed to be styled -->
+    
+    <!-- ids are mentioned with # and classes are mentioned with . -->
+
+    <!-- ID's -->
+    <h1 id="pr">Priyangshu</h1>
+    <h2>Das</h2>
+    <h1 id="an">Anish</h1>
+    <!--
+        <head>
+        #pr{
+            color:red;
+        }
+        #an{
+            color:red;
+        }
+
+    </head> -->
+
+    <!-- CLASSES -->
+    <h1 classes="c1">Priyangshu</h1>
+    <h2>Das</h2>
+    <h3 classes="c1">Anish</h3>
+    <h4>Sinha</h4>
+
+    <!-- 
+         <head>
+        #.c1{
+            color:blue;
+        }
+
+    </head> -->
+     
+    <!-- Combinator Selector -->
+    <div>
+        <P>Paragraph 1 is in the DIV</P>
+        <p>Paragraph 2 is in the DIV</p>
+        <section>
+            <!--not child but descendant  -->
+            <!--written with a space  -->
+            <!--all childs are descendants but not all descendants are child -->
+            <p>Paragraph 3 in the div(inside a section element).</p>
+        </section>
+    </div>
+    <!-- {
+        div p{
+            color: blue;
+        }
+        div > p{
+            color: white;
+        }
+    } -->
+
+    <!-- Psudo Class Selector -->
+    <!-- {
+        p::first-line{
+            color:red;
+        }
+    } -->
+    <!-- Psudo Selector 
+
+     1)unvisted link
+         a:link{
+        color: red;
+    }
+
+    2)visited link
+    a:visited{
+        color: green;
+    }
+
+    3)mouse over link
+    a:hover{
+        color: hotpink;
+    }
+
+    4)selected link
+    a:active{
+        color: yellow;
+    } --> 
+
+    <!-- Padding increases space inside a box
+        Margin added margin can also be used to increase space  -->
+    
+    <!-- Border -->
+
+    <!-- Float We can float images so that they occupy less space.-->
+
+    <div class="c">
+        <div class="c1">lorem/div>
+        <div class="c2">lorem</div>
+        <div class="c3">lorem</div>
+    <!-- .c1{
+        float: right;/foat: left;
+        }
+        .c2{
+            float: right;/foat: left;
+        }
+        .c3{
+            float: right;/foat: left;
+           
+            we can also write like this
+
+            .c1,.c2,.c3{
+                float: right;/foat: left;
+            }
+
+            .c1,.c2,.c3{
+                float: inherit;
+            }
+    } -->
+
+
+
+    <!-- Border -->
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nostrum!</p>
+    </div>
+
+    <!-- div{
+        border: 1px solid
+        background-color: red;
+        padding: 20pix;
+        margin: 20pix
+    } -->
+    
+    <!-- A single element can be assigned multiple classes -->
+    
+<!-- FORMS PART -->
+
+<form>
+    <fieldset> <!--surronds the form section with a line-->
+    <legend>Personal Details:-</legend>  <!--things will come inside the border-->
+    <label for="name"><b>Username:</b></label>  <!--Label tag highlights a checkbox when it is clicked-->
+    <input type="Text" id="name"/>
+    <br>
+    <br>                                        <!--Name tag is used for outracting element/Type tag is used to make the browser understand to target what-->
+    <label><b>Password:</b></label>
+    <input type="Text"/>
+    <br>
+    <br>
+
+<label><b>Gender:</b></label>        
+<input type="Radio" name="g1"/>Male        <!--Radio is used for selecting one option out of many options.We will give same id for all boxes for radio to work.-->
+<input type="radio" name="g1"/>Female
+<input type="Radio" name="g1"/>Trans 
+<br>
+<br>   
+
+<!-- Select tag is used to give dropdown menu for user to select -->
+
+<label for="food"><b>Favourite Food</b></label>
+<select id="food">     <!--Select tag coantains all the option tags-->
+    <option>Indian</option>
+    <option>chinese</option>
+</select>
+<br>
+<br>
+<label for="year"><b>Which Year?</b></label>
+<select id="year">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+</select>
+
+<br>
+<br>
+
+<!-- <text area> is used to increase the are of writing text for eg- writing block -->
+<!--Placeholder helps us to indicate user a command which can be overlapped any time as the user clicks on the box-->
+<!-- requiered redirects the user to the checkbox missing  when the submit button is pressed -->
+
+<label for="addr"><b>Address:</b></label>
+<textarea 
+id="addr"
+rows="5"                    
+cols="5"
+placeholder="Enter address here"
+required
+></textarea>     <!--text areas ">" should be closed adjacent to </textarea> other wise html would glitch.Only appilcable to text area-->
+
+<br>
+<br>
+<!-- checkbox is same as radiobutton -->
+<label><b>Educational Qualification</b></label>
+<input type="checkbox" name="g1"/>Grade 10
+<input type="checkbox" name="g1"/>Grade 12          <!--name variable can be g1,g2,g3 they would give same output-->
+<input type="checkbox" name="g1"/>College
+<br>
+<br>
+
+<button type="submit">Submit</button>    <!--for botton two types submit/reset.All on attributes direct the user to the thing assigned to on-->
+<button type="reset" name="Reset" onclick="alert('Delete all')">Reset</button>
+<button class="button" onclick="alert('Hello!')">Message</button>
+</fieldset>
+</form>   
+
+
+
+
+
+    
+</body>
+</html>
